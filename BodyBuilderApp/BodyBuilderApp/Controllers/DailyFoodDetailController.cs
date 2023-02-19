@@ -53,7 +53,7 @@ namespace Traibanhoa.Controllers
 
         // PUT: api/DailyFoodDetails/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut()]
+        [HttpPut]
         public async Task<IActionResult> PutDailyFoodDetail([FromBody] CreateDailyFoodDetailRequest createDailyFoodDetailRequest)
         {
             var check = await _DailyFoodDetailService.AddNewDailyFoodDetail(createDailyFoodDetailRequest);

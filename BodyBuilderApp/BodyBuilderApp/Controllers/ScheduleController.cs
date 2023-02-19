@@ -37,7 +37,7 @@ namespace Traibanhoa.Controllers
         }
 
         // GET: api/Schedules/5
-        [HttpGet()]
+        [HttpGet("{id}")]
         public async Task<ActionResult<Schedule>> GetSchedule([FromRoute] string id)
         {
             var Schedule = await _ScheduleService.GetScheduleByID(id);
@@ -52,7 +52,7 @@ namespace Traibanhoa.Controllers
 
         // PUT: api/Schedules/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id}")]
+        [HttpPut]
         public async Task<IActionResult> PutSchedule([FromBody] CreateScheduleRequest createScheduleRequest)
         {
             var check = await _ScheduleService.AddNewSchedule(createScheduleRequest);

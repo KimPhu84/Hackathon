@@ -52,7 +52,7 @@ namespace Traibanhoa.Controllers
 
         // PUT: api/Targets/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut()]
+        [HttpPut]
         public async Task<IActionResult> PutTarget([FromBody] CreateTargetRequest createTargetRequest)
         {
             var check = await _TargetService.AddNewTarget(createTargetRequest);

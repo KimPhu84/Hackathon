@@ -20,7 +20,7 @@ namespace Traibanhoa.Controllers
             _CustomerService = CustomerService;
         }
             // GET: api/Customers
-            [HttpGet]
+        [HttpGet]
         public async Task<ActionResult<IEnumerable<Customer>>> GetCustomers()
         {
             try
@@ -62,7 +62,7 @@ namespace Traibanhoa.Controllers
 
         // PUT: api/Customers/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut()]
+        [HttpPut]
         public async Task<IActionResult> PutCustomer([FromBody] CreateCustomerRequest createCustomerRequest)
         {
             var check = await _CustomerService.AddNewCustomer(createCustomerRequest);

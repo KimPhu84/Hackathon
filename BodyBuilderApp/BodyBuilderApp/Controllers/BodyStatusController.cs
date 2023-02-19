@@ -52,7 +52,7 @@ namespace Traibanhoa.Controllers
 
         // PUT: api/BodyStatuss/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut()]
+        [HttpPut]
         public async Task<IActionResult> PutBodyStatus([FromBody] CreateBodyStatusRequest createBodyStatusRequest)
         {
             var check = await _BodyStatusService.AddNewBodyStatus(createBodyStatusRequest);
