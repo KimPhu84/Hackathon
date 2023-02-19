@@ -23,7 +23,6 @@ namespace Traibanhoa.Controllers
 
         // GET: api/Trainers
         [HttpGet]
-        [Authorize(Roles = "admin")]
         public async Task<ActionResult<IEnumerable<Trainer>>> GetTrainers()
         {
             try
@@ -53,7 +52,7 @@ namespace Traibanhoa.Controllers
 
         // PUT: api/Trainers/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id}")]
+        [HttpPut()]
         public async Task<IActionResult> PutTrainer([FromBody] CreateTrainerRequest createTrainerRequest)
         {
             var check = await _TrainerService.AddNewTrainer(createTrainerRequest);

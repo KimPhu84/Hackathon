@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using BodyBuilderApp.Modules.DailyFoodDetailModule.Interface;
 using BodyBuilderApp.Modules.DailyFoodDetailModule.Request;
+using Microsoft.AspNetCore.Authorization;
+using System.Data;
 
 namespace Traibanhoa.Controllers
 {
@@ -51,7 +53,7 @@ namespace Traibanhoa.Controllers
 
         // PUT: api/DailyFoodDetails/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id}")]
+        [HttpPut()]
         public async Task<IActionResult> PutDailyFoodDetail([FromBody] CreateDailyFoodDetailRequest createDailyFoodDetailRequest)
         {
             var check = await _DailyFoodDetailService.AddNewDailyFoodDetail(createDailyFoodDetailRequest);

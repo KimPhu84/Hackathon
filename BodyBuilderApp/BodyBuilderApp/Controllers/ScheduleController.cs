@@ -23,7 +23,6 @@ namespace Traibanhoa.Controllers
 
         // GET: api/Schedules
         [HttpGet]
-        [Authorize(Roles = "admin")]
         public async Task<ActionResult<IEnumerable<Schedule>>> GetSchedules()
         {
             try
@@ -38,7 +37,7 @@ namespace Traibanhoa.Controllers
         }
 
         // GET: api/Schedules/5
-        [HttpGet("{id}")]
+        [HttpGet()]
         public async Task<ActionResult<Schedule>> GetSchedule([FromRoute] string id)
         {
             var Schedule = await _ScheduleService.GetScheduleByID(id);

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "myw4saodoEWnxNGqwBsOsyPTgnisM92IPsVuc8MrhNakJiqV8Zi8oBCCGPTBmq+gDJUxY/KEX45Pwpo4Yb5E0Q==",
+  "dgSpecHash": "dm15yjGgoL63ryEWgx5olL5lYLAgwC+LkCoLLHBRE1lh4DK9oF/XoSOT6o+H0wNoDgEcghMrUOhsDEyMriVcNA==",
   "success": true,
   "projectFilePath": "D:\\onfit\\BodyBuilderApp\\BodyBuilderApp\\BodyBuilderApp.csproj",
   "expectedPackageFiles": [
@@ -37,6 +37,7 @@
     "C:\\Users\\hoang\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\hoang\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\hoang\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\hoang\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.0\\microsoft.visualstudio.azure.containers.tools.targets.1.17.0.nupkg.sha512",
     "C:\\Users\\hoang\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\hoang\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\hoang\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",

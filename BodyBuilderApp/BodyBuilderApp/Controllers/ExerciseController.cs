@@ -23,7 +23,6 @@ namespace Traibanhoa.Controllers
 
         // GET: api/Exercises
         [HttpGet]
-        [Authorize(Roles = "admin")]
         public async Task<ActionResult<IEnumerable<Exercise>>> GetExercises()
         {
             try
@@ -53,7 +52,7 @@ namespace Traibanhoa.Controllers
 
         // PUT: api/Exercises/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id}")]
+        [HttpPut()]
         public async Task<IActionResult> PutExercise([FromBody] CreateExerciseRequest createExerciseRequest)
         {
             var check = await _ExerciseService.AddNewExercise(createExerciseRequest);

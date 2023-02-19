@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using BodyBuilderApp.Modules.FoodDetailModule.Interface;
 using BodyBuilderApp.Modules.FoodDetailModule.Request;
+using Microsoft.AspNetCore.Authorization;
+using System.Data;
 
 namespace Traibanhoa.Controllers
 {
@@ -21,7 +23,7 @@ namespace Traibanhoa.Controllers
 
         // GET: api/FoodDetails
         [HttpGet]
-        [Authorize(Roles = "admin")]
+        
         public async Task<ActionResult<IEnumerable<FoodDetail>>> GetFoodDetails()
         {
             try
@@ -51,7 +53,7 @@ namespace Traibanhoa.Controllers
 
         // PUT: api/FoodDetails/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id}")]
+        [HttpPut()]
         public async Task<IActionResult> PutFoodDetail([FromBody] CreateFoodDetailRequest createFoodDetailRequest)
         {
             var check = await _FoodDetailService.AddNewFoodDetail(createFoodDetailRequest);
