@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\onfit\\BodyBuilderApp\\BodyBuilderApp\\BodyBuilderApp.csproj": {}
+    "D:\\Hackathon\\BodyBuilderApp\\BodyBuilderApp\\BodyBuilderApp.csproj": {}
   },
   "projects": {
-    "D:\\onfit\\BodyBuilderApp\\BodyBuilderApp\\BodyBuilderApp.csproj": {
+    "D:\\Hackathon\\BodyBuilderApp\\BodyBuilderApp\\BodyBuilderApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\onfit\\BodyBuilderApp\\BodyBuilderApp\\BodyBuilderApp.csproj",
+        "projectUniqueName": "D:\\Hackathon\\BodyBuilderApp\\BodyBuilderApp\\BodyBuilderApp.csproj",
         "projectName": "BodyBuilderApp",
-        "projectPath": "D:\\onfit\\BodyBuilderApp\\BodyBuilderApp\\BodyBuilderApp.csproj",
+        "projectPath": "D:\\Hackathon\\BodyBuilderApp\\BodyBuilderApp\\BodyBuilderApp.csproj",
         "packagesPath": "C:\\Users\\hoang\\.nuget\\packages\\",
-        "outputPath": "D:\\onfit\\BodyBuilderApp\\BodyBuilderApp\\obj\\",
+        "outputPath": "D:\\Hackathon\\BodyBuilderApp\\BodyBuilderApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\VS\\Share\\NuGetPackages"
